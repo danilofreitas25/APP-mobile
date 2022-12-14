@@ -1,0 +1,40 @@
+{
+  "lista": [
+    {
+      "produto": "Melao",
+      "quantidade": "4",
+      "status": false,
+      "id": 3
+    },
+    {
+      "produto": "Arroz",
+      "quantidade": "5",
+      "status": false,
+      "id": 4
+    },
+    {
+      "produto": "1",
+      "quantidade": "1",
+      "status": false,
+      "id": 5
+    },
+    {
+      "produto": "qwerty",
+      "quantidade": "5",
+      "status": false,
+      "id": 6
+    },
+    {
+      "produto": "Picanha invertida",
+      "quantidade": "4",
+      "status": false,
+      "id": 7
+    },
+    {
+      "produto": "Goiaba",
+      "quantidade": "4",
+      "status": false,
+      "id": 8
+    }
+  ]
+}
