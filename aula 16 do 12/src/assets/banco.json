@@ -1,0 +1,28 @@
+{
+  "lista": [
+    {
+      "produto": "Carne",
+      "quantidade": "4",
+      "status": false,
+      "id": 2
+    },
+    {
+      "produto": "Picanha invertida",
+      "quantidade": "2",
+      "status": false,
+      "id": 3
+    },
+    {
+      "produto": "Melao",
+      "quantidade": ".3",
+      "status": false,
+      "id": 4
+    },
+    {
+      "produto": "Feijao",
+      "quantidade": "0.5",
+      "status": false,
+      "id": 5
+    }
+  ]
+}
