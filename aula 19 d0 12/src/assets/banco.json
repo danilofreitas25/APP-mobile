@@ -1,0 +1,10 @@
+{
+  "lista": [
+    {
+      "produto": "Carne",
+      "quantidade": "1234",
+      "status": false,
+      "id": 5
+    }
+  ]
+}
