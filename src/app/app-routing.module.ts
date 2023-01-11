@@ -2,30 +2,35 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-
-  //Rotas filhas
-  {
-    path: 'home',
-    loadChildren: () => import('./page/home/home.module').then( m => m.HomePageModule)
-  },
-
-  {
-    path: 'contato', 
-    loadChildren: () => import('./page/contato/contato.module').then(m => m.ContatoPageModule)
-  },
-  
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'folder/Inbox',
     pathMatch: 'full'
   },
   {
-    path: 'sobre',
-    loadChildren: () => import('./page/sobre/sobre.module').then( m => m.SobrePageModule)
+    path: 'folder/:id',
+    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
-
-  //Rotas simples
-  /* {path 'inicio', component: iniciocomponete} */
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'sobre',
+    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+  },
+  {
+    path: 'produtos',
+    loadChildren: () => import('./produtos/produtos.module').then( m => m.ProdutosPageModule)
+  },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./favoritos/favoritos.module').then( m => m.FavoritosPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  }
 ];
 
 @NgModule({
@@ -34,4 +39,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
